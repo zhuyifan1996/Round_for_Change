@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TabVC.h
 //  Round_for_Change
 //
 //  Created by Yifan Zhu on 10/10/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,NSURLConnectionDelegate>
-
+@interface TabVC : UITabBarController
 
 @end
-

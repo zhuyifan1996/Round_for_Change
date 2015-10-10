@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Config.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setBarTintColor:TAB_BAR_BACKGROUND_COLOR];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:NAV_BAR_BACKGROUND_COLOR];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Helvetica" size:14.0f], UITextAttributeFont, nil] forState:UIControlStateNormal];
+    
+    //set navigation bar font
+    NSShadow* shadow = [NSShadow new];
+    shadow.shadowOffset = CGSizeMake(0.0f, 1.0f);
+    shadow.shadowColor = [UIColor whiteColor];
+    [[UINavigationBar appearance] setTitleTextAttributes: @{
+                NSForegroundColorAttributeName: [UIColor whiteColor],
+                NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:20.0f],
+                NSShadowAttributeName: shadow}];
+
+//    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+//                                                       titleHighlightedColor, UITextAttributeTextColor,
+//                                                       nil] forState:UIControlStateHighlighted];
+    
     return YES;
 }
 
