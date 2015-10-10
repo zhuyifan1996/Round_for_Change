@@ -8,10 +8,16 @@
 
 #import "tableViewCell.h"
 
+@interface tableViewCell()
+
+@end
+
 @implementation tableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
+    
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

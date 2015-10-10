@@ -10,6 +10,8 @@
 
 #import "MainViewController.h"
 #import "tableViewCell.h"
+#import "Config.h"
+#import "Campaign.h"
 
 @interface MainViewController ()
 @property(strong) NSArray *data;
@@ -20,12 +22,16 @@
 
 @implementation MainViewController
 
+-(void)initFakeData{
+    Campaign *c1 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"breast_cancer"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. on October 26, 2013. This Forum was held at the Holiday Inn in Matteson, IL to educate and give information about the importance of getting mammograms annually and to also remember to do self-exams at home every month. " WithTitle:@"Breast Cancer Awareness"];
+    self.data= [NSArray arrayWithObjects:c1,nil];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-//    self.data = [NSArray arrayWithObjects:@"haha",@"bite me", nil];
-    self.data = [NSArray arrayWithObjects:nil];
+    [self initFakeData];
     
     //Add a right button to navigation bar
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Show Popover" style:UIBarButtonItemStylePlain target:self action:@selector(showPopOver:)];
@@ -87,7 +93,10 @@
         cell = [nib objectAtIndex:0];
     }
     
-    cell.titleLabel.text=[self.data objectAtIndex:indexPath.row];
+    Campaign *c = (Campaign*)([self.data objectAtIndex:indexPath.row]);
+    cell.titleLabel.text= c.title;
+    cell.imageView.image=c.img;
+    cell.textView.text=c.desc;
     
     return cell;
 }
@@ -139,6 +148,7 @@
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     // Append the new data to the instance variable you declared
     self.responseData = data;
+//    NSLog(@"%@",data);
     [self.tableViewSpinner stopAnimating];
 }
 
