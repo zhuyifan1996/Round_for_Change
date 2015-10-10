@@ -58,4 +58,18 @@
     return CELL_HEIGHT;
 }
 
+/*Jump to profile page if a cell is clicked.*/
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"segue_list_to_campaign_display" sender:self];
+}
+
+/*************************
+ Navigation
+ ************************/
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqual:@"segue_list_to_campaign_display"]){
+        //Pass the data to display VC
+    }
+}
+
 @end

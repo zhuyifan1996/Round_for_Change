@@ -35,10 +35,55 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mbZ-Nw-rBd"/>
+                    <connections>
+                        <segue destination="Gv9-o3-GpK" kind="push" identifier="segue_list_to_campaign_display" id="ELf-ze-IHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1209" y="288"/>
+        </scene>
+        <!--Campaign DisplayVC View Controller-->
+        <scene sceneID="SPO-1m-pes">
+            <objects>
+                <viewController id="Gv9-o3-GpK" customClass="CampaignDisplayVCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bF9-D7-WK2"/>
+                        <viewControllerLayoutGuide type="bottom" id="iR0-ZI-mv1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z7g-QS-i2t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qn-YA-2Tf">
+                                <rect key="frame" x="120" y="269" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.37647058820000001" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="FE4-sM-xQm"/>
+                                </constraints>
+                                <state key="normal" title="Support">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="supportCampaign:" destination="Gv9-o3-GpK" eventType="touchUpInside" id="o2d-qv-kJf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4Qn-YA-2Tf" secondAttribute="centerX" id="Pjw-0L-mbC"/>
+                            <constraint firstAttribute="centerY" secondItem="4Qn-YA-2Tf" secondAttribute="centerY" id="Rjg-Em-rRK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f87-7D-aDj"/>
+                    <connections>
+                        <outlet property="support_btn" destination="4Qn-YA-2Tf" id="DuE-Xk-Q43"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGI-U0-a8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="288"/>
         </scene>
         <!--Item-->
         <scene sceneID="AuL-Ld-ZMw">

@@ -16,6 +16,7 @@
 		473B3BF51BC95C2D00FDC8F6 /* Round_for_ChangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3BF41BC95C2D00FDC8F6 /* Round_for_ChangeTests.m */; };
 		473B3BFF1BC9697200FDC8F6 /* tableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473B3BFE1BC9697200FDC8F6 /* tableViewCell.xib */; };
 		473B3C021BC969DA00FDC8F6 /* tableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3C011BC969DA00FDC8F6 /* tableViewCell.m */; };
+		473B3C051BC973B900FDC8F6 /* CampaignDisplayVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3C041BC973B900FDC8F6 /* CampaignDisplayVCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		473B3BFE1BC9697200FDC8F6 /* tableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableViewCell.xib; sourceTree = "<group>"; };
 		473B3C001BC969DA00FDC8F6 /* tableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableViewCell.h; sourceTree = "<group>"; };
 		473B3C011BC969DA00FDC8F6 /* tableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableViewCell.m; sourceTree = "<group>"; };
+		473B3C031BC973B900FDC8F6 /* CampaignDisplayVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampaignDisplayVCViewController.h; sourceTree = "<group>"; };
+		473B3C041BC973B900FDC8F6 /* CampaignDisplayVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampaignDisplayVCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				473B3BD81BC95C2D00FDC8F6 /* Supporting Files */,
 				473B3C001BC969DA00FDC8F6 /* tableViewCell.h */,
 				473B3C011BC969DA00FDC8F6 /* tableViewCell.m */,
+				473B3C031BC973B900FDC8F6 /* CampaignDisplayVCViewController.h */,
+				473B3C041BC973B900FDC8F6 /* CampaignDisplayVCViewController.m */,
 			);
 			path = Round_for_Change;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				473B3C021BC969DA00FDC8F6 /* tableViewCell.m in Sources */,
 				473B3BDE1BC95C2D00FDC8F6 /* AppDelegate.m in Sources */,
 				473B3BDB1BC95C2D00FDC8F6 /* main.m in Sources */,
+				473B3C051BC973B900FDC8F6 /* CampaignDisplayVCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
