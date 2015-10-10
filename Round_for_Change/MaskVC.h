@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MaskVC.h
 //  Round_for_Change
 //
 //  Created by Yifan Zhu on 10/10/15.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,NSURLConnectionDelegate>
-
-
+@interface MaskVC : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *backBtn;
 
 @end
-

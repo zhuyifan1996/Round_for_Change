@@ -13,6 +13,9 @@
 
 @interface MainViewController ()
 @property(strong) NSArray *data;
+@property NSData *responseData;
+@property (strong,nonatomic) UIActivityIndicatorView *tableViewSpinner;
+
 @end
 
 @implementation MainViewController
@@ -21,7 +24,43 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.data = [NSArray arrayWithObjects:@"haha",@"bite me", nil];
+//    self.data = [NSArray arrayWithObjects:@"haha",@"bite me", nil];
+    self.data = [NSArray arrayWithObjects:nil];
+    
+    //Add a right button to navigation bar
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Show Popover" style:UIBarButtonItemStylePlain target:self action:@selector(showPopOver:)];
+    self.navigationItem.rightBarButtonItem = anotherButton;
+    
+    // setup the spinner
+    if (self.data.count==0) {
+        self.tableViewSpinner=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        [self.view addSubview:self.tableViewSpinner];
+        [self.tableViewSpinner setCenter:CGPointMake(self.view.center.x, self.view.center.y*0.8)];
+        [self.tableViewSpinner startAnimating];
+        self.tableViewSpinner.hidesWhenStopped=YES;
+    }
+    
+    // Create the request.
+    NSURLRequest *request = [NSURLRequest requestWithURL:
+                             [NSURL URLWithString:@"http://google.com"]];
+    
+    // Create url connection and fire request
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    
+//    //Send the request for data
+//    NSURLRequest * urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://google.com"]];
+//    NSURLResponse * response = nil;
+//    NSError * error = nil;
+//    NSData * data = [NSURLConnection sendSynchronousRequest:urlRequest
+//                                          returningResponse:&response
+//                                                      error:&error];
+//    if (error == nil)
+//    {
+//        // Parse data here
+//        [self.tableViewSpinner stopAnimating];
+//    }
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,6 +109,54 @@
     if([segue.identifier isEqual:@"segue_list_to_campaign_display"]){
         //Pass the data to display VC
     }
+}
+
+-(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue{
+    
+}
+
+-(IBAction)showPopOver:(UIBarButtonItem*)sender{
+//    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"maskView" owner:self options:nil];
+//    UIView *new_view = [nib objectAtIndex:0];
+//    
+//    UIWindow* mainWindow = [[UIApplication sharedApplication] keyWindow];
+//    [mainWindow addSubview: new_view];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
+    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"MaskVC"];
+    [self presentViewController:viewController animated:YES completion:^(void){}];
+}
+
+#pragma mark NSURLConnection Delegate Methods
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    // A response has been received, this is where we initialize the instance var you created
+    // so that we can append data to it in the didReceiveData method
+    // Furthermore, this method is called each time there is a redirect so reinitializing it
+    // also serves to clear it
+    self.responseData = [[NSData alloc] init];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    // Append the new data to the instance variable you declared
+    self.responseData = data;
+    [self.tableViewSpinner stopAnimating];
+}
+
+- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
+                  willCacheResponse:(NSCachedURLResponse*)cachedResponse {
+    // Return nil to indicate not necessary to store a cached response for this connection
+    return nil;
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    // The request is complete and data has been received
+    // You can parse the stuff in your instance variable now
+    
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    // The request has failed for some reason!
+    // Check the error var
 }
 
 @end
