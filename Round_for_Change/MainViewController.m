@@ -25,12 +25,11 @@
 -(void)initFakeData{
     Campaign *c1 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"breast_cancer"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. on October 26, 2013. This Forum was held at the Holiday Inn in Matteson, IL to educate and give information about the importance of getting mammograms annually and to also remember to do self-exams at home every month. " WithTitle:@"Breast Cancer Awareness"];
     self.data= [NSArray arrayWithObjects:c1,nil];
-
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBarHidden=NO;
     [self initFakeData];
     
     //Add a right button to navigation bar

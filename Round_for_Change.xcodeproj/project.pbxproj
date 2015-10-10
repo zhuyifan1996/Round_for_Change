@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		471279381BC9A83800CACD99 /* Campaign.m in Sources */ = {isa = PBXBuildFile; fileRef = 471279371BC9A83800CACD99 /* Campaign.m */; };
 		4712793B1BC9B1E800CACD99 /* SignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4712793A1BC9B1E800CACD99 /* SignInVC.m */; };
+		4712793E1BC9B9C100CACD99 /* TabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4712793D1BC9B9C100CACD99 /* TabVC.m */; };
 		473B3BDB1BC95C2D00FDC8F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3BDA1BC95C2D00FDC8F6 /* main.m */; };
 		473B3BDE1BC95C2D00FDC8F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3BDD1BC95C2D00FDC8F6 /* AppDelegate.m */; };
 		473B3BE11BC95C2D00FDC8F6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3BE01BC95C2D00FDC8F6 /* MainViewController.m */; };
@@ -37,6 +38,8 @@
 		471279371BC9A83800CACD99 /* Campaign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campaign.m; sourceTree = "<group>"; };
 		471279391BC9B1E800CACD99 /* SignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInVC.h; sourceTree = "<group>"; };
 		4712793A1BC9B1E800CACD99 /* SignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInVC.m; sourceTree = "<group>"; };
+		4712793C1BC9B9C100CACD99 /* TabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabVC.h; sourceTree = "<group>"; };
+		4712793D1BC9B9C100CACD99 /* TabVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabVC.m; sourceTree = "<group>"; };
 		473B3BD51BC95C2D00FDC8F6 /* Round_for_Change.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Round_for_Change.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		473B3BD91BC95C2D00FDC8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473B3BDA1BC95C2D00FDC8F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				473B3C0E1BC9959D00FDC8F6 /* MaskVC.m */,
 				471279391BC9B1E800CACD99 /* SignInVC.h */,
 				4712793A1BC9B1E800CACD99 /* SignInVC.m */,
+				4712793C1BC9B9C100CACD99 /* TabVC.h */,
+				4712793D1BC9B9C100CACD99 /* TabVC.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4712793E1BC9B9C100CACD99 /* TabVC.m in Sources */,
 				473B3C0F1BC9959D00FDC8F6 /* MaskVC.m in Sources */,
 				473B3BE11BC95C2D00FDC8F6 /* MainViewController.m in Sources */,
 				471279381BC9A83800CACD99 /* Campaign.m in Sources */,
