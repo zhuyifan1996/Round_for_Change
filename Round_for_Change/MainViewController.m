@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 FinTech. All rights reserved.
 //
 
-#define CELL_HEIGHT 100
+#define CELL_HEIGHT 250
 
 #import "MainViewController.h"
 #import "tableViewCell.h"
@@ -107,9 +107,9 @@
 }
 
 /*Jump to profile page if a cell is clicked.*/
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier:@"segue_list_to_campaign_display" sender:self];
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    [self performSegueWithIdentifier:@"segue_list_to_campaign_display" sender:self];
+//}
 
 /*************************
  Navigation

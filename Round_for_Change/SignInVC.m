@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.transparentBtn.alpha = 0;
-//    self.navigationController.navigationBarHidden=YES;
+//    self.navigationController.navigationBarHidden=NO;
     
 //    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sign_in_bg"]];
 //    backgroundImage.contentMode = UIViewContentModeScaleAspectFill;

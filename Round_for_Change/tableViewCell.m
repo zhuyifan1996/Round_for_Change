@@ -18,12 +18,22 @@
     // Initialization code
     
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
+    self.masterVC = [storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+    self.textView.userInteractionEnabled=NO;
+    
+    UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(highlightLetter:)];
+    [self addGestureRecognizer:ges];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+-(IBAction)highlightLetter:(id)sender{
+    [self.masterVC performSegueWithIdentifier:@"segue_list_to_campaign_display" sender:self.masterVC];
 }
 
 @end
