@@ -32,8 +32,8 @@
 
 -(void)initFakeData{
     Campaign *c1 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"breast_cancer"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. " WithTitle:@"Breast Cancer Awareness"];
-    Campaign *c2 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"breast_cancer"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. " WithTitle:@"Build My Album"];
-    Campaign *c3 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"breast_cancer"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. " WithTitle:@"Community Garden"];
+    Campaign *c2 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"ocean_image"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. " WithTitle:@"Build My Album"];
+    Campaign *c3 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"tree_image"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. " WithTitle:@"Community Garden"];
     self.data= [NSArray arrayWithObjects:c1,c2,c3,nil];
 }
 
@@ -126,12 +126,12 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
  Navigation
  ************************/
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqual:@"segue_list_to_campaign_display"]){
+    if([segue.identifier isEqual:@"segue_campaign"]){
         //Pass the data to display VC
     }
 }
 
--(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue{
+-(IBAction)prepareForUnwind2:(UIStoryboardSegue *)segue{
     
 }
 
@@ -147,7 +147,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 }
 
 -(IBAction)highlightLetter:(id)sender{
-    [self performSegueWithIdentifier:@"segue_list_to_campaign_display" sender:self];
+    [self performSegueWithIdentifier:@"segue_campaign" sender:self];
 }
 
 #pragma mark NSURLConnection Delegate Methods
