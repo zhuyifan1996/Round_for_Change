@@ -12,6 +12,7 @@
 		4712793E1BC9B9C100CACD99 /* TabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4712793D1BC9B9C100CACD99 /* TabVC.m */; };
 		471279401BC9F76100CACD99 /* Myriad Pro Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4712793F1BC9F76100CACD99 /* Myriad Pro Regular.ttf */; };
 		471279431BCA010F00CACD99 /* MyCampaignsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 471279421BCA010F00CACD99 /* MyCampaignsVC.m */; };
+		4725AB6A1BCA20D50015EC97 /* tableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4725AB691BCA20D50015EC97 /* tableViewCell2.xib */; };
 		473B3BDB1BC95C2D00FDC8F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3BDA1BC95C2D00FDC8F6 /* main.m */; };
 		473B3BDE1BC95C2D00FDC8F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3BDD1BC95C2D00FDC8F6 /* AppDelegate.m */; };
 		473B3BE11BC95C2D00FDC8F6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3BE01BC95C2D00FDC8F6 /* MainViewController.m */; };
@@ -46,6 +47,7 @@
 		4712793F1BC9F76100CACD99 /* Myriad Pro Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Myriad Pro Regular.ttf"; sourceTree = "<group>"; };
 		471279411BCA010F00CACD99 /* MyCampaignsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCampaignsVC.h; sourceTree = "<group>"; };
 		471279421BCA010F00CACD99 /* MyCampaignsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCampaignsVC.m; sourceTree = "<group>"; };
+		4725AB691BCA20D50015EC97 /* tableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableViewCell2.xib; sourceTree = "<group>"; };
 		473B3BD51BC95C2D00FDC8F6 /* Round_for_Change.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Round_for_Change.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		473B3BD91BC95C2D00FDC8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473B3BDA1BC95C2D00FDC8F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		473B3C091BC9918C00FDC8F6 /* tableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				4725AB691BCA20D50015EC97 /* tableViewCell2.xib */,
 				473B3BFE1BC9697200FDC8F6 /* tableViewCell.xib */,
 				473B3C001BC969DA00FDC8F6 /* tableViewCell.h */,
 				473B3C011BC969DA00FDC8F6 /* tableViewCell.m */,
@@ -275,6 +278,7 @@
 				473B3BFF1BC9697200FDC8F6 /* tableViewCell.xib in Resources */,
 				471279401BC9F76100CACD99 /* Myriad Pro Regular.ttf in Resources */,
 				473B3BE91BC95C2D00FDC8F6 /* LaunchScreen.xib in Resources */,
+				4725AB6A1BCA20D50015EC97 /* tableViewCell2.xib in Resources */,
 				473B3BE61BC95C2D00FDC8F6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

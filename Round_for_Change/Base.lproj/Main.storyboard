@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NHV-oS-E96">
-                                <rect key="frame" x="26" y="119" width="268" height="330"/>
+                                <rect key="frame" x="16" y="119" width="288" height="330"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="lh2-fK-1Pv"/>
@@ -38,7 +38,7 @@
                             <constraint firstItem="NHV-oS-E96" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="b08-od-GOw"/>
                             <constraint firstAttribute="centerX" secondItem="NHV-oS-E96" secondAttribute="centerX" id="cyY-bL-dsb"/>
                             <constraint firstItem="nhv-bk-XGR" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="duJ-cZ-k6j"/>
-                            <constraint firstItem="NHV-oS-E96" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="eC1-Cl-GT4"/>
+                            <constraint firstItem="NHV-oS-E96" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="eC1-Cl-GT4"/>
                             <constraint firstItem="nhv-bk-XGR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="evk-iQ-MPg"/>
                         </constraints>
                     </view>
@@ -222,7 +222,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-IU-Ffe">
-                                <rect key="frame" x="26" y="119" width="268" height="330"/>
+                                <rect key="frame" x="-40" y="79" width="400" height="410"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="1vw-aU-D8g" id="ijx-kM-RiV"/>
@@ -235,11 +235,11 @@
                             <constraint firstItem="pFu-V4-W6s" firstAttribute="leading" secondItem="LFp-4n-jYg" secondAttribute="leading" id="6Vc-5b-Dx2"/>
                             <constraint firstAttribute="bottom" secondItem="pFu-V4-W6s" secondAttribute="bottom" id="7De-SZ-A5l"/>
                             <constraint firstItem="M1o-IU-Ffe" firstAttribute="centerX" secondItem="pFu-V4-W6s" secondAttribute="centerX" id="BLa-jn-HZc"/>
-                            <constraint firstItem="Fze-Ze-LPG" firstAttribute="top" secondItem="M1o-IU-Ffe" secondAttribute="bottom" constant="70" id="JWu-Te-mDu"/>
+                            <constraint firstItem="Fze-Ze-LPG" firstAttribute="top" secondItem="M1o-IU-Ffe" secondAttribute="bottom" constant="30" id="JWu-Te-mDu"/>
                             <constraint firstItem="M1o-IU-Ffe" firstAttribute="centerY" secondItem="pFu-V4-W6s" secondAttribute="centerY" id="ZgB-eV-00R"/>
                             <constraint firstAttribute="trailing" secondItem="pFu-V4-W6s" secondAttribute="trailing" id="npQ-DZ-KPs"/>
                             <constraint firstItem="pFu-V4-W6s" firstAttribute="top" secondItem="LFp-4n-jYg" secondAttribute="top" id="zqy-WR-loC"/>
-                            <constraint firstItem="M1o-IU-Ffe" firstAttribute="leading" secondItem="pFu-V4-W6s" secondAttribute="trailing" constant="-294" id="ztI-Ro-yed"/>
+                            <constraint firstItem="M1o-IU-Ffe" firstAttribute="leading" secondItem="pFu-V4-W6s" secondAttribute="trailing" constant="-360" id="ztI-Ro-yed"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Campaigns" id="oHT-x4-7hB"/>
