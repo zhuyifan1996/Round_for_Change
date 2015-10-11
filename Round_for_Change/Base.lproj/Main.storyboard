@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2805" y="288"/>
+            <point key="canvasLocation" x="2805" y="320"/>
         </scene>
         <!--Campaign DisplayVC View Controller-->
         <scene sceneID="SPO-1m-pes">
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGI-U0-a8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3206" y="288"/>
+            <point key="canvasLocation" x="3310" y="320"/>
         </scene>
         <!--MaskVC-->
         <scene sceneID="ntE-7A-1Bm">
@@ -183,7 +183,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6S6-ZY-P7G" kind="custom" id="b8i-P7-7AH"/>
+                                    <segue destination="39d-cv-HPc" kind="custom" id="ZJb-s6-Lu7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -240,7 +240,7 @@
         <scene sceneID="L6Y-04-KsN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wgt-2M-FlQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" image="test_icon" selectedImage="test_icon" id="WYG-SR-86V"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="setting_icon" id="Qy9-cm-hLX"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="1rJ-C3-afc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JlK-JM-9D0">
@@ -254,7 +254,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="907-zm-tOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2273" y="288"/>
+            <point key="canvasLocation" x="2273" y="304"/>
         </scene>
         <!--My Contributions-->
         <scene sceneID="JSB-cZ-BsA">
@@ -275,31 +275,10 @@
             </objects>
             <point key="canvasLocation" x="2805" y="1016"/>
         </scene>
-        <!--TabVC-->
-        <scene sceneID="NUs-fU-hRw">
-            <objects>
-                <tabBarController storyboardIdentifier="tabVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6S6-ZY-P7G" customClass="TabVC" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="kgA-O6-jOK">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="wgt-2M-FlQ" kind="relationship" relationship="viewControllers" id="N9b-WR-YzU"/>
-                        <segue destination="4Fy-za-Isl" kind="relationship" relationship="viewControllers" id="EuX-hj-89U"/>
-                        <segue destination="jXe-io-VnG" kind="relationship" relationship="viewControllers" id="OYg-Ex-CIf"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="25J-WM-MaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1741" y="288"/>
-        </scene>
-        <!--Donations-->
+        <!--Navigation Controller-->
         <scene sceneID="8dU-xu-f9v">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Fy-za-Isl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Donations" image="setting_icon" selectedImage="setting_icon" id="1As-S2-vHH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VOs-Kn-cHT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -317,8 +296,8 @@
         <!--Campaigns-->
         <scene sceneID="hA5-pE-M41">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jXe-io-VnG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Campaigns" id="bsx-5z-Nz4"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="jXe-io-VnG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Campaigns" image="test_icon" id="VdQ-VT-bXc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yCP-VJ-MM4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -332,6 +311,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8f-xa-xTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2273" y="-374"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8tU-a0-Tmn">
+            <objects>
+                <tabBarController storyboardIdentifier="tabVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="39d-cv-HPc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Hg6-WT-9Q1">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wgt-2M-FlQ" kind="relationship" relationship="viewControllers" id="anH-TM-hAq"/>
+                        <segue destination="jXe-io-VnG" kind="relationship" relationship="viewControllers" id="yaJ-vY-hao"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQ4-UL-R1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653" y="280"/>
         </scene>
     </scenes>
     <resources>

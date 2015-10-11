@@ -36,9 +36,9 @@
                 NSShadowAttributeName: shadow}];
 
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
-    UITabBarController *tabBarViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabVC"];
-    NSArray *tabBarItems=tabBarViewController.toolbarItems;
-    [tabBarItems[0] setSelectedImage:[UIImage imageNamed:@"giving_icon"]];
+//    UITabBarController *tabBarViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabVC"];
+//    NSArray *tabBarItems=tabBarViewController.toolbarItems;
+//    [tabBarItems[0] setSelectedImage:[UIImage imageNamed:@"giving_icon"]];
     
     return YES;
 }

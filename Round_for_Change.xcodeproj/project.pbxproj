@@ -23,6 +23,7 @@
 		473B3C021BC969DA00FDC8F6 /* tableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3C011BC969DA00FDC8F6 /* tableViewCell.m */; };
 		473B3C051BC973B900FDC8F6 /* CampaignDisplayVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3C041BC973B900FDC8F6 /* CampaignDisplayVCViewController.m */; };
 		473B3C0F1BC9959D00FDC8F6 /* MaskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 473B3C0E1BC9959D00FDC8F6 /* MaskVC.m */; };
+		47CCF47E1BCA116600AECAA5 /* ExploreNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CCF47D1BCA116600AECAA5 /* ExploreNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		473B3C0D1BC9959D00FDC8F6 /* MaskVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskVC.h; sourceTree = "<group>"; };
 		473B3C0E1BC9959D00FDC8F6 /* MaskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskVC.m; sourceTree = "<group>"; };
 		473B3C111BC9A01B00FDC8F6 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		47CCF47C1BCA116600AECAA5 /* ExploreNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreNavigationController.h; sourceTree = "<group>"; };
+		47CCF47D1BCA116600AECAA5 /* ExploreNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 				4712793D1BC9B9C100CACD99 /* TabVC.m */,
 				471279411BCA010F00CACD99 /* MyCampaignsVC.h */,
 				471279421BCA010F00CACD99 /* MyCampaignsVC.m */,
+				47CCF47C1BCA116600AECAA5 /* ExploreNavigationController.h */,
+				47CCF47D1BCA116600AECAA5 /* ExploreNavigationController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				4712793B1BC9B1E800CACD99 /* SignInVC.m in Sources */,
 				471279431BCA010F00CACD99 /* MyCampaignsVC.m in Sources */,
 				473B3C051BC973B900FDC8F6 /* CampaignDisplayVCViewController.m in Sources */,
+				47CCF47E1BCA116600AECAA5 /* ExploreNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

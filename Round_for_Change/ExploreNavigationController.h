@@ -1,5 +1,5 @@
 //
-//  TabVC.h
+//  ExploreNavigationController.h
 //  Round_for_Change
 //
 //  Created by Yifan Zhu on 10/10/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TabVC : UITabBarController <UITabBarDelegate>
+@interface ExploreNavigationController : UINavigationController
 
 @end

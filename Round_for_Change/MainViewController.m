@@ -23,11 +23,20 @@
 
 @implementation MainViewController
 
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self){
+        self.tabBarItem.image = [UIImage imageNamed:@"test_icon_highlight"];
+    }
+    return self;
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden=YES;
     self.tableView.layer.cornerRadius = 30.0;
     self.tableView.clipsToBounds=YES;
+//    self.tabBarItem.image = [UIImage imageNamed:@"test_icon_highlight"];
 }
 
 -(void)initFakeData{
@@ -40,7 +49,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initFakeData];
-//    self.view.backgroundColor = NAV_BAR_BACKGROUND_COLOR;
     
     //Add a right button to navigation bar
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Show Popover" style:UIBarButtonItemStylePlain target:self action:@selector(showPopOver:)];
