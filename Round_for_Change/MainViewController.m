@@ -63,13 +63,13 @@
         self.tableViewSpinner.hidesWhenStopped=YES;
     }
     
-    // Create the request.
-    NSURLRequest *request = [NSURLRequest requestWithURL:
-                             [NSURL URLWithString:@"http://google.com"]];
-    
-    // Create url connection and fire request
-    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    
+//    // Create the request.
+//    NSURLRequest *request = [NSURLRequest requestWithURL:
+//                             [NSURL URLWithString:@"http://google.com"]];
+//    
+//    // Create url connection and fire request
+//    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+//    
     UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(highlightLetter:)];
     [self.view addGestureRecognizer:ges];
 

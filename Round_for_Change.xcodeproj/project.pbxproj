@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470182541BCA58D000404E36 /* MySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 470182531BCA58D000404E36 /* MySegue.m */; settings = {ASSET_TAGS = (); }; };
 		471279381BC9A83800CACD99 /* Campaign.m in Sources */ = {isa = PBXBuildFile; fileRef = 471279371BC9A83800CACD99 /* Campaign.m */; };
 		4712793B1BC9B1E800CACD99 /* SignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4712793A1BC9B1E800CACD99 /* SignInVC.m */; };
 		4712793E1BC9B9C100CACD99 /* TabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4712793D1BC9B9C100CACD99 /* TabVC.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		470182521BCA58D000404E36 /* MySegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySegue.h; sourceTree = "<group>"; };
+		470182531BCA58D000404E36 /* MySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySegue.m; sourceTree = "<group>"; };
 		471279361BC9A83800CACD99 /* Campaign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campaign.h; sourceTree = "<group>"; };
 		471279371BC9A83800CACD99 /* Campaign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campaign.m; sourceTree = "<group>"; };
 		471279391BC9B1E800CACD99 /* SignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInVC.h; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				473B3BE21BC95C2D00FDC8F6 /* Main.storyboard */,
 				473B3BE51BC95C2D00FDC8F6 /* Images.xcassets */,
 				473B3BE71BC95C2D00FDC8F6 /* LaunchScreen.xib */,
+				470182521BCA58D000404E36 /* MySegue.h */,
+				470182531BCA58D000404E36 /* MySegue.m */,
 			);
 			path = Round_for_Change;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				4712793E1BC9B9C100CACD99 /* TabVC.m in Sources */,
 				473B3C0F1BC9959D00FDC8F6 /* MaskVC.m in Sources */,
 				473B3BE11BC95C2D00FDC8F6 /* MainViewController.m in Sources */,
+				470182541BCA58D000404E36 /* MySegue.m in Sources */,
 				471279381BC9A83800CACD99 /* Campaign.m in Sources */,
 				473B3C021BC969DA00FDC8F6 /* tableViewCell.m in Sources */,
 				473B3BDE1BC95C2D00FDC8F6 /* AppDelegate.m in Sources */,

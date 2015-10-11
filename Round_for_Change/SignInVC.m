@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 FinTech. All rights reserved.
 //
 
+#import "MySegue.h"
 #import "SignInVC.h"
 
 @interface SignInVC ()
@@ -28,4 +29,11 @@
 //    [self.view sendSubviewToBack:backgroundImage];
 }
 
+// Prepare for the segue going forward
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue isKindOfClass:[MySegue class]]) {
+        // Set the start point for the animation to center of the button for the animation
+        ((MySegue *)segue).originatingPoint = self.transparentBtn.center;
+    }
+}
 @end
