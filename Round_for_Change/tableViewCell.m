@@ -21,9 +21,11 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
     self.masterVC = [storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
     self.textView.userInteractionEnabled=NO;
+    [self.textView setFont:[UIFont fontWithName:@"Myriad Pro Regular" size:15]];
+    self.userInteractionEnabled=NO;
     
-    UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(highlightLetter:)];
-    [self addGestureRecognizer:ges];
+//    UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(highlightLetter:)];
+//    [self addGestureRecognizer:ges];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -32,8 +34,8 @@
     // Configure the view for the selected state
 }
 
--(IBAction)highlightLetter:(id)sender{
-    [self.masterVC performSegueWithIdentifier:@"segue_list_to_campaign_display" sender:self.masterVC];
-}
+//-(IBAction)highlightLetter:(id)sender{
+//    [self.masterVC performSegueWithIdentifier:@"segue_list_to_campaign_display" sender:self.masterVC];
+//}
 
 @end

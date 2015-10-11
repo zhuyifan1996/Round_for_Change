@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  MyCampaignsVC.m
 //  Round_for_Change
 //
 //  Created by Yifan Zhu on 10/10/15.
@@ -8,12 +8,12 @@
 
 #define CELL_HEIGHT 250
 
-#import "MainViewController.h"
+#import "MyCampaignsVC.h"
 #import "tableViewCell.h"
 #import "Config.h"
 #import "Campaign.h"
 
-@interface MainViewController ()
+@interface MyCampaignsVC ()
 @property(strong) NSArray *data;
 @property NSData *responseData;
 @property (strong,nonatomic) UIActivityIndicatorView *tableViewSpinner;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation MainViewController
+@implementation MyCampaignsVC
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -40,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initFakeData];
-//    self.view.backgroundColor = NAV_BAR_BACKGROUND_COLOR;
+    //    self.view.backgroundColor = NAV_BAR_BACKGROUND_COLOR;
     
     //Add a right button to navigation bar
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Show Popover" style:UIBarButtonItemStylePlain target:self action:@selector(showPopOver:)];
@@ -64,7 +64,7 @@
     
     UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(highlightLetter:)];
     [self.view addGestureRecognizer:ges];
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -113,7 +113,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView
-    heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return CELL_HEIGHT;
 }
 
@@ -136,11 +136,11 @@
 }
 
 -(IBAction)showPopOver:(UIBarButtonItem*)sender{
-//    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"maskView" owner:self options:nil];
-//    UIView *new_view = [nib objectAtIndex:0];
-//    
-//    UIWindow* mainWindow = [[UIApplication sharedApplication] keyWindow];
-//    [mainWindow addSubview: new_view];
+    //    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"maskView" owner:self options:nil];
+    //    UIView *new_view = [nib objectAtIndex:0];
+    //
+    //    UIWindow* mainWindow = [[UIApplication sharedApplication] keyWindow];
+    //    [mainWindow addSubview: new_view];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
     UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"MaskVC"];
     [self presentViewController:viewController animated:YES completion:^(void){}];
@@ -163,7 +163,7 @@
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     // Append the new data to the instance variable you declared
     self.responseData = data;
-//    NSLog(@"%@",data);
+    //    NSLog(@"%@",data);
     [self.tableViewSpinner stopAnimating];
 }
 

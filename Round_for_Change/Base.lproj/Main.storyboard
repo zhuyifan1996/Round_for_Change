@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NHV-oS-E96">
-                                <rect key="frame" x="30" y="144" width="260" height="280"/>
+                                <rect key="frame" x="26" y="119" width="268" height="330"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="lh2-fK-1Pv"/>
@@ -35,15 +35,16 @@
                             <constraint firstAttribute="trailing" secondItem="nhv-bk-XGR" secondAttribute="trailing" id="Mdv-v1-JZJ"/>
                             <constraint firstAttribute="centerY" secondItem="NHV-oS-E96" secondAttribute="centerY" id="O9w-ug-LYH"/>
                             <constraint firstAttribute="bottom" secondItem="nhv-bk-XGR" secondAttribute="bottom" id="XpZ-6k-ing"/>
-                            <constraint firstItem="NHV-oS-E96" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="b08-od-GOw"/>
+                            <constraint firstItem="NHV-oS-E96" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="b08-od-GOw"/>
                             <constraint firstAttribute="centerX" secondItem="NHV-oS-E96" secondAttribute="centerX" id="cyY-bL-dsb"/>
                             <constraint firstItem="nhv-bk-XGR" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="duJ-cZ-k6j"/>
-                            <constraint firstItem="NHV-oS-E96" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="14" id="eC1-Cl-GT4"/>
+                            <constraint firstItem="NHV-oS-E96" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="eC1-Cl-GT4"/>
                             <constraint firstItem="nhv-bk-XGR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="evk-iQ-MPg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Explore" id="mbZ-Nw-rBd"/>
                     <connections>
+                        <outlet property="tableView" destination="NHV-oS-E96" id="6eS-dM-FDO"/>
                         <segue destination="Gv9-o3-GpK" kind="push" identifier="segue_list_to_campaign_display" id="ELf-ze-IHj"/>
                     </connections>
                 </viewController>
@@ -117,19 +118,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htm-pd-Mis">
                                 <rect key="frame" x="139" y="122" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnp-5H-6mD">
                                 <rect key="frame" x="139" y="254.5" width="42" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZa-5s-NKj">
                                 <rect key="frame" x="139" y="387" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -208,7 +209,7 @@
         <!--My Campaigns-->
         <scene sceneID="xG1-EJ-yHE">
             <objects>
-                <viewController title="My Campaigns" id="1vw-aU-D8g" sceneMemberID="viewController">
+                <viewController title="My Campaigns" id="1vw-aU-D8g" customClass="MyCampaignsVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AcS-Jd-OPg"/>
                         <viewControllerLayoutGuide type="bottom" id="Fze-Ze-LPG"/>
@@ -216,7 +217,18 @@
                     <view key="view" contentMode="scaleToFill" id="LFp-4n-jYg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="explore_bg" translatesAutoresizingMaskIntoConstraints="NO" id="pFu-V4-W6s">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pFu-V4-W6s" firstAttribute="leading" secondItem="LFp-4n-jYg" secondAttribute="leading" id="6Vc-5b-Dx2"/>
+                            <constraint firstAttribute="bottom" secondItem="pFu-V4-W6s" secondAttribute="bottom" id="7De-SZ-A5l"/>
+                            <constraint firstAttribute="trailing" secondItem="pFu-V4-W6s" secondAttribute="trailing" id="npQ-DZ-KPs"/>
+                            <constraint firstItem="pFu-V4-W6s" firstAttribute="top" secondItem="LFp-4n-jYg" secondAttribute="top" id="zqy-WR-loC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Campaigns" id="oHT-x4-7hB"/>
                 </viewController>
@@ -228,7 +240,7 @@
         <scene sceneID="L6Y-04-KsN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wgt-2M-FlQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" id="WYG-SR-86V"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="test_icon" selectedImage="test_icon" id="WYG-SR-86V"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="1rJ-C3-afc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JlK-JM-9D0">
@@ -266,7 +278,7 @@
         <!--TabVC-->
         <scene sceneID="NUs-fU-hRw">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6S6-ZY-P7G" customClass="TabVC" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6S6-ZY-P7G" customClass="TabVC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="kgA-O6-jOK">
@@ -283,11 +295,11 @@
             </objects>
             <point key="canvasLocation" x="1741" y="288"/>
         </scene>
-        <!--Contributions-->
+        <!--Donations-->
         <scene sceneID="8dU-xu-f9v">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Fy-za-Isl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contributions" id="1As-S2-vHH"/>
+                    <tabBarItem key="tabBarItem" title="Donations" image="setting_icon" selectedImage="setting_icon" id="1As-S2-vHH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VOs-Kn-cHT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -324,7 +336,9 @@
     </scenes>
     <resources>
         <image name="explore_bg" width="360" height="640"/>
+        <image name="setting_icon" width="32" height="32"/>
         <image name="sign_in_bg" width="360" height="640"/>
+        <image name="test_icon" width="32" height="32"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

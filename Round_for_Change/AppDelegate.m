@@ -24,7 +24,7 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:NAV_BAR_BACKGROUND_COLOR];
     
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Helvetica" size:14.0f], UITextAttributeFont, nil] forState:UIControlStateNormal];
+//    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Helvetica" size:14.0f], UITextAttributeFont, nil] forState:UIControlStateNormal];
     
     //set navigation bar font
     NSShadow* shadow = [NSShadow new];
@@ -35,9 +35,10 @@
                 NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:20.0f],
                 NSShadowAttributeName: shadow}];
 
-//    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-//                                                       titleHighlightedColor, UITextAttributeTextColor,
-//                                                       nil] forState:UIControlStateHighlighted];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
+    UITabBarController *tabBarViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabVC"];
+    NSArray *tabBarItems=tabBarViewController.toolbarItems;
+    [tabBarItems[0] setSelectedImage:[UIImage imageNamed:@"giving_icon"]];
     
     return YES;
 }
