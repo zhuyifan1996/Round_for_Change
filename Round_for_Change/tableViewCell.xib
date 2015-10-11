@@ -14,49 +14,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pll-i4-ZyS">
-                        <rect key="frame" x="0.0" y="14" width="346" height="147"/>
+                        <rect key="frame" x="0.0" y="14" width="346" height="314.5"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="147" id="XpF-Ft-18I"/>
+                            <constraint firstAttribute="height" constant="314.5" id="XpF-Ft-18I"/>
                         </constraints>
                     </imageView>
-                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-7V-cXg">
-                        <rect key="frame" x="8" y="190" width="320" height="130.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <attributedString key="attributedText">
-                            <fragment>
-                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <attributes>
-                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVq-eY-JaB">
-                        <rect key="frame" x="8" y="164" width="329" height="18"/>
-                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Pll-i4-ZyS" firstAttribute="leading" secondItem="KIG-ek-VAk" secondAttribute="leading" id="6py-bq-st5"/>
-                    <constraint firstItem="Pll-i4-ZyS" firstAttribute="leading" secondItem="ATQ-7V-cXg" secondAttribute="leading" constant="-8" id="Tyf-Yf-JLu"/>
-                    <constraint firstItem="Pll-i4-ZyS" firstAttribute="trailing" secondItem="ATQ-7V-cXg" secondAttribute="trailing" constant="18" id="Vg6-Gr-XKj"/>
-                    <constraint firstItem="Pll-i4-ZyS" firstAttribute="trailing" secondItem="bVq-eY-JaB" secondAttribute="trailing" constant="9" id="WaZ-hL-IBR"/>
-                    <constraint firstAttribute="trailing" secondItem="Pll-i4-ZyS" secondAttribute="trailing" id="Why-Ec-Qms"/>
-                    <constraint firstItem="bVq-eY-JaB" firstAttribute="top" secondItem="Pll-i4-ZyS" secondAttribute="bottom" constant="3" id="X1z-C3-2OY"/>
-                    <constraint firstItem="ATQ-7V-cXg" firstAttribute="top" secondItem="bVq-eY-JaB" secondAttribute="bottom" constant="8" id="bXb-1E-i5I"/>
-                    <constraint firstAttribute="bottom" secondItem="ATQ-7V-cXg" secondAttribute="bottom" constant="8" id="iep-jf-jYL"/>
-                    <constraint firstItem="Pll-i4-ZyS" firstAttribute="leading" secondItem="bVq-eY-JaB" secondAttribute="leading" constant="-8" id="l6H-k6-ZOV"/>
-                    <constraint firstItem="Pll-i4-ZyS" firstAttribute="top" secondItem="KIG-ek-VAk" secondAttribute="topMargin" constant="6" id="pQE-4h-6gb"/>
+                    <constraint firstItem="Pll-i4-ZyS" firstAttribute="top" secondItem="KIG-ek-VAk" secondAttribute="topMargin" constant="6" id="QrO-wc-lur"/>
+                    <constraint firstAttribute="trailing" secondItem="Pll-i4-ZyS" secondAttribute="trailing" id="cHl-Ay-t7x"/>
+                    <constraint firstItem="Pll-i4-ZyS" firstAttribute="leading" secondItem="KIG-ek-VAk" secondAttribute="leading" id="faR-Ca-1Qa"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="imageView" destination="Pll-i4-ZyS" id="9Me-jT-I0X"/>
-                <outlet property="textView" destination="ATQ-7V-cXg" id="Q2n-Yz-eLI"/>
-                <outlet property="titleLabel" destination="bVq-eY-JaB" id="ihm-4C-pLf"/>
             </connections>
             <point key="canvasLocation" x="90" y="175.5"/>
         </tableViewCell>

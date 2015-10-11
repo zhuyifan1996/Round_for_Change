@@ -221,13 +221,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="explore_bg" translatesAutoresizingMaskIntoConstraints="NO" id="pFu-V4-W6s">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-IU-Ffe">
+                                <rect key="frame" x="26" y="119" width="268" height="330"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1vw-aU-D8g" id="ijx-kM-RiV"/>
+                                    <outlet property="delegate" destination="1vw-aU-D8g" id="6p8-2j-AgF"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pFu-V4-W6s" firstAttribute="leading" secondItem="LFp-4n-jYg" secondAttribute="leading" id="6Vc-5b-Dx2"/>
                             <constraint firstAttribute="bottom" secondItem="pFu-V4-W6s" secondAttribute="bottom" id="7De-SZ-A5l"/>
+                            <constraint firstItem="M1o-IU-Ffe" firstAttribute="centerX" secondItem="pFu-V4-W6s" secondAttribute="centerX" id="BLa-jn-HZc"/>
+                            <constraint firstItem="Fze-Ze-LPG" firstAttribute="top" secondItem="M1o-IU-Ffe" secondAttribute="bottom" constant="70" id="JWu-Te-mDu"/>
+                            <constraint firstItem="M1o-IU-Ffe" firstAttribute="centerY" secondItem="pFu-V4-W6s" secondAttribute="centerY" id="ZgB-eV-00R"/>
                             <constraint firstAttribute="trailing" secondItem="pFu-V4-W6s" secondAttribute="trailing" id="npQ-DZ-KPs"/>
                             <constraint firstItem="pFu-V4-W6s" firstAttribute="top" secondItem="LFp-4n-jYg" secondAttribute="top" id="zqy-WR-loC"/>
+                            <constraint firstItem="M1o-IU-Ffe" firstAttribute="leading" secondItem="pFu-V4-W6s" secondAttribute="trailing" constant="-294" id="ztI-Ro-yed"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Campaigns" id="oHT-x4-7hB"/>
@@ -267,7 +279,18 @@
                     <view key="view" contentMode="scaleToFill" id="N80-N5-E8M">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contribution_bg" translatesAutoresizingMaskIntoConstraints="NO" id="xAS-KK-gXc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xAS-KK-gXc" secondAttribute="bottom" id="5Rt-Gs-bUG"/>
+                            <constraint firstItem="xAS-KK-gXc" firstAttribute="top" secondItem="N80-N5-E8M" secondAttribute="top" id="Gq1-Hr-oDI"/>
+                            <constraint firstItem="xAS-KK-gXc" firstAttribute="leading" secondItem="N80-N5-E8M" secondAttribute="leading" id="kT0-0p-mbn"/>
+                            <constraint firstAttribute="trailing" secondItem="xAS-KK-gXc" secondAttribute="trailing" id="nLa-DL-gF9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Contributions" id="akH-Wm-hlF"/>
                 </viewController>
@@ -278,7 +301,7 @@
         <!--Donations-->
         <scene sceneID="8dU-xu-f9v">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Fy-za-Isl" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4Fy-za-Isl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Donations" image="donation_icon" id="oS9-h2-WKy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VOs-Kn-cHT">
@@ -286,6 +309,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="92o-CR-hD7">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="eJJ-CO-dJZ" kind="relationship" relationship="rootViewController" id="qWE-oC-Y1W"/>
                     </connections>
@@ -337,6 +363,7 @@
     </scenes>
     <resources>
         <image name="campaign_icon" width="32" height="32"/>
+        <image name="contribution_bg" width="360" height="640"/>
         <image name="donation_icon" width="32" height="32"/>
         <image name="explore_bg" width="360" height="640"/>
         <image name="sign_in_bg" width="360" height="640"/>

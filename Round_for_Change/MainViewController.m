@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 FinTech. All rights reserved.
 //
 
-#define CELL_HEIGHT 250
+#define CELL_HEIGHT 350
 
 #import "MainViewController.h"
 #import "tableViewCell.h"
@@ -40,9 +40,9 @@
 }
 
 -(void)initFakeData{
-    Campaign *c1 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"breast_cancer"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. " WithTitle:@"Breast Cancer Awareness"];
-    Campaign *c2 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"breast_cancer"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. " WithTitle:@"Build My Album"];
-    Campaign *c3 = [[Campaign alloc] initWithImage:[UIImage imageNamed:@"breast_cancer"] WithDesc:@"WE support Breast Cancer awareness, research and the celebration for survivors. We recently participated in the Breast Cancer Forum hosted by Ingalls Hospital of Chicago Heights, IL and the women of Zeta Phi Beta Sorority, Inc. " WithTitle:@"Community Garden"];
+    UIImage *c1 = [UIImage imageNamed:@"STATIC_1"];
+    UIImage *c2 = [UIImage imageNamed:@"STATIC_2"];
+    UIImage *c3 = [UIImage imageNamed:@"STATIC_3"];
     self.data= [NSArray arrayWithObjects:c1,c2,c3,nil];
 }
 
@@ -99,10 +99,8 @@
         cell = [nib objectAtIndex:0];
     }
     
-    Campaign *c = (Campaign*)([self.data objectAtIndex:indexPath.row]);
-    cell.titleLabel.text= c.title;
-    cell.imageView.image=c.img;
-    cell.textView.text=c.desc;
+    UIImage *c = (UIImage*)([self.data objectAtIndex:indexPath.row]);
+    cell.imageView.image=c;
     
     // Remove seperator inset
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
