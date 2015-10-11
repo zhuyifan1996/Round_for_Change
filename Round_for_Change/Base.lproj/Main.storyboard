@@ -240,7 +240,7 @@
         <scene sceneID="L6Y-04-KsN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wgt-2M-FlQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" image="setting_icon" id="Qy9-cm-hLX"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="campaign_icon" id="Qy9-cm-hLX"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="1rJ-C3-afc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JlK-JM-9D0">
@@ -275,10 +275,11 @@
             </objects>
             <point key="canvasLocation" x="2805" y="1016"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Donations-->
         <scene sceneID="8dU-xu-f9v">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Fy-za-Isl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Donations" image="donation_icon" id="oS9-h2-WKy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VOs-Kn-cHT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -326,6 +327,7 @@
                     <connections>
                         <segue destination="wgt-2M-FlQ" kind="relationship" relationship="viewControllers" id="anH-TM-hAq"/>
                         <segue destination="jXe-io-VnG" kind="relationship" relationship="viewControllers" id="yaJ-vY-hao"/>
+                        <segue destination="4Fy-za-Isl" kind="relationship" relationship="viewControllers" id="61T-zB-s91"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQ4-UL-R1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -334,8 +336,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="campaign_icon" width="32" height="32"/>
+        <image name="donation_icon" width="32" height="32"/>
         <image name="explore_bg" width="360" height="640"/>
-        <image name="setting_icon" width="32" height="32"/>
         <image name="sign_in_bg" width="360" height="640"/>
         <image name="test_icon" width="32" height="32"/>
     </resources>
