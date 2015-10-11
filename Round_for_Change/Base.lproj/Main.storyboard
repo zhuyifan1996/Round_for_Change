@@ -18,21 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-UN-HYn">
-                                <rect key="frame" x="20" y="10" width="280" height="622"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="explore_bg" translatesAutoresizingMaskIntoConstraints="NO" id="nhv-bk-XGR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NHV-oS-E96">
+                                <rect key="frame" x="30" y="144" width="260" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="fj9-ek-RUN"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="QI9-hI-Sfd"/>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="lh2-fK-1Pv"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="4rj-Sn-Ghr"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="p1S-UN-HYn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="6pH-Yy-Sw4"/>
-                            <constraint firstAttribute="bottom" secondItem="p1S-UN-HYn" secondAttribute="bottom" constant="-64" id="BgW-7m-EeW"/>
-                            <constraint firstAttribute="trailing" secondItem="p1S-UN-HYn" secondAttribute="trailing" constant="20" id="NbO-kl-FtP"/>
-                            <constraint firstItem="p1S-UN-HYn" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="10" id="NdU-sZ-Xdv"/>
+                            <constraint firstAttribute="trailing" secondItem="nhv-bk-XGR" secondAttribute="trailing" id="Mdv-v1-JZJ"/>
+                            <constraint firstAttribute="centerY" secondItem="NHV-oS-E96" secondAttribute="centerY" id="O9w-ug-LYH"/>
+                            <constraint firstAttribute="bottom" secondItem="nhv-bk-XGR" secondAttribute="bottom" id="XpZ-6k-ing"/>
+                            <constraint firstItem="NHV-oS-E96" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="b08-od-GOw"/>
+                            <constraint firstAttribute="centerX" secondItem="NHV-oS-E96" secondAttribute="centerX" id="cyY-bL-dsb"/>
+                            <constraint firstItem="nhv-bk-XGR" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="duJ-cZ-k6j"/>
+                            <constraint firstItem="NHV-oS-E96" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="14" id="eC1-Cl-GT4"/>
+                            <constraint firstItem="nhv-bk-XGR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="evk-iQ-MPg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Explore" id="mbZ-Nw-rBd"/>
@@ -316,6 +323,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="explore_bg" width="360" height="640"/>
         <image name="sign_in_bg" width="360" height="640"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

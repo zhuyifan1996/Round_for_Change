@@ -29,9 +29,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden=NO;
+    self.navigationController.navigationBarHidden=YES;
     [self initFakeData];
-    self.view.backgroundColor = NAV_BAR_BACKGROUND_COLOR;
+//    self.view.backgroundColor = NAV_BAR_BACKGROUND_COLOR;
     
     //Add a right button to navigation bar
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Show Popover" style:UIBarButtonItemStylePlain target:self action:@selector(showPopOver:)];
