@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-UN-HYn">
-                                <rect key="frame" x="0.0" y="10" width="320" height="622"/>
+                                <rect key="frame" x="20" y="10" width="280" height="622"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="fj9-ek-RUN"/>
@@ -29,9 +29,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="p1S-UN-HYn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6pH-Yy-Sw4"/>
+                            <constraint firstItem="p1S-UN-HYn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="6pH-Yy-Sw4"/>
                             <constraint firstAttribute="bottom" secondItem="p1S-UN-HYn" secondAttribute="bottom" constant="-64" id="BgW-7m-EeW"/>
-                            <constraint firstAttribute="trailing" secondItem="p1S-UN-HYn" secondAttribute="trailing" id="NbO-kl-FtP"/>
+                            <constraint firstAttribute="trailing" secondItem="p1S-UN-HYn" secondAttribute="trailing" constant="20" id="NbO-kl-FtP"/>
                             <constraint firstItem="p1S-UN-HYn" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="10" id="NdU-sZ-Xdv"/>
                         </constraints>
                     </view>
