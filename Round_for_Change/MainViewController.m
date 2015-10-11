@@ -40,9 +40,9 @@
 }
 
 -(void)initFakeData{
-    UIImage *c1 = [UIImage imageNamed:@"STATIC_1"];
-    UIImage *c2 = [UIImage imageNamed:@"STATIC_2"];
-    UIImage *c3 = [UIImage imageNamed:@"STATIC_3"];
+    UIImage *c1 = [UIImage imageNamed:@"STATIC_3"];
+    UIImage *c2 = [UIImage imageNamed:@"STATIC_1"];
+    UIImage *c3 = [UIImage imageNamed:@"STATIC_2"];
     self.data= [NSArray arrayWithObjects:c1,c2,c3,nil];
 }
 

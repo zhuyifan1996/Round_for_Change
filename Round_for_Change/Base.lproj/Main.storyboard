@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NHV-oS-E96">
-                                <rect key="frame" x="16" y="75" width="288" height="418"/>
+                                <rect key="frame" x="-4" y="60" width="328" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="lh2-fK-1Pv"/>
@@ -35,10 +35,10 @@
                             <constraint firstAttribute="trailing" secondItem="nhv-bk-XGR" secondAttribute="trailing" id="Mdv-v1-JZJ"/>
                             <constraint firstAttribute="centerY" secondItem="NHV-oS-E96" secondAttribute="centerY" id="O9w-ug-LYH"/>
                             <constraint firstAttribute="bottom" secondItem="nhv-bk-XGR" secondAttribute="bottom" id="XpZ-6k-ing"/>
-                            <constraint firstItem="NHV-oS-E96" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="b08-od-GOw"/>
+                            <constraint firstItem="NHV-oS-E96" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="b08-od-GOw"/>
                             <constraint firstAttribute="centerX" secondItem="NHV-oS-E96" secondAttribute="centerX" id="cyY-bL-dsb"/>
                             <constraint firstItem="nhv-bk-XGR" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="duJ-cZ-k6j"/>
-                            <constraint firstItem="NHV-oS-E96" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="eC1-Cl-GT4"/>
+                            <constraint firstItem="NHV-oS-E96" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="eC1-Cl-GT4"/>
                             <constraint firstItem="nhv-bk-XGR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="evk-iQ-MPg"/>
                         </constraints>
                     </view>
